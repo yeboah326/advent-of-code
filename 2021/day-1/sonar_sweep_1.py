@@ -10,8 +10,9 @@ def sonar_sweep():
         if int(elem) > current:
             increased += 1
         current = int(elem)
-    
+
     return increased
+
 
 if __name__ == "__main__":
     result = sonar_sweep()

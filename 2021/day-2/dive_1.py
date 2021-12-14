@@ -2,7 +2,6 @@ def dive():
     horizontal = 0
     depth = 0
 
-
     file = open("input.txt", "r").readlines()
 
     for item in file:
@@ -14,8 +13,9 @@ def dive():
             depth += int(value)
         elif command == "up":
             depth -= int(value)
-    
+
     return horizontal * depth
+
 
 if __name__ == "__main__":
     result = dive()

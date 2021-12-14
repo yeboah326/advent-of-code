@@ -1,4 +1,3 @@
-
 def sonar_sweep():
     file = open("input.txt", "r").readlines()
 
@@ -11,8 +10,9 @@ def sonar_sweep():
         if int(file[i]) + int(file[i + 1]) + int(file[i + 2]) > current:
             increased += 1
         current = int(file[i]) + int(file[i + 1]) + int(file[i + 2])
-    
+
     return increased
+
 
 if __name__ == "__main__":
     result = sonar_sweep()

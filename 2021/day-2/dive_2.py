@@ -15,8 +15,9 @@ def dive():
             aim += int(value)
         elif command == "up":
             aim -= int(value)
-    
+
     return horizontal * depth
+
 
 if __name__ == "__main__":
     result = dive()
